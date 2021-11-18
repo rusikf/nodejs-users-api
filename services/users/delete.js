@@ -1,4 +1,4 @@
-import { readUsers, saveUsers } from '../../store'
+import { readUsers, saveUsers } from '~/store'
 
 export default id => {
   const users = readUsers()

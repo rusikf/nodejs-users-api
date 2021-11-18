@@ -1,4 +1,4 @@
-import { readUsers, saveUsers } from '../../store'
+import { readUsers, saveUsers } from '~/store'
 
 export default params => {
   const users = readUsers()
@@ -7,6 +7,6 @@ export default params => {
   if (existUser) return
   users.push(params)
   saveUsers(users)
-
+  console.log('return params',)
   return params
 }
