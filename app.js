@@ -1,10 +1,5 @@
-import express from 'express'
-import App from './controllers/users'
-
-const app = express()
-app.use(express.json())
-
-App(app)
+import createServer from './server'
+const app = createServer()
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server runs !!')
