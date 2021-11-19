@@ -1,12 +1,7 @@
-import { readUsers, saveUsers } from '~/store'
+import models from '../../models/index'
+const { User } = models;
 
-export default params => {
-  const users = readUsers()
-
-  const existUser = users.find(user => user.id === params.id)
-  if (existUser) return
-  users.push(params)
-  saveUsers(users)
-  console.log('return params',)
-  return params
+export default async (params) => {
+  const { user } = await User.create(params)
+  return { user }
 }

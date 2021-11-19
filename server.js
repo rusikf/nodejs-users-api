@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express")
 import useRoutes from './controllers/users'
 
