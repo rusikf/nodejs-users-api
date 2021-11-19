@@ -5,6 +5,7 @@ import UsersDelete from '../services/users/delete'
 
 export default function App(app) {
   app.get('/users', (_req, res) => {
+    console.log('get users')
     const users = readUsers()
     return res.send({ success: true, users })
   })
