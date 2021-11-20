@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-crud-json",
+  "name": "nodejs-users-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Users API management on Node.js",
   "main": "index.js",
   "scripts": {
     "build": "babel app.js out-file index-compiled.js",

@@ -1,10 +1,11 @@
 Users API
 
 Setup
-`npm install && npm start`
+`npm install`
 `npx sequelize db:setup`
-`npm seauelize db:migrate`
+`npx sequelize db:migrate`
 `npx sequelize db:seed:all`
+`npm start`
 
 Tests
 `npm test`
